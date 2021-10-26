@@ -1,0 +1,931 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+
+}
+
+header{
+    grid-column: 1/2;
+    display: flex;
+    width: 33vw;
+    height: 100vh;
+    justify-content: end;
+}
+
+main{
+    display: grid;
+    grid-column: 2/3;
+    grid-template-columns: repeat(2, 1fr );
+    width: 67vw;
+    height: 100vh;
+    
+}
+
+nav  > a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.856);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    font-style: bolder;
+}
+
+nav > a{
+
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.856);    
+    font-style: bolder;
+    align-items: center;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 251px;
+    height: 48px;
+
+}
+
+.botones-left{
+    height: 70vh;
+}
+.botones-left > .pajaro-inicio{
+    width: 55px;
+}
+/* Estilo botones */
+
+/* ---Boton inicio */
+.inicio-btn > span{
+    
+    align-items: center;
+    width: 114px;
+    border-radius:50px;
+    text-align: center;
+    margin-right: 16px;
+    margin-left: 10px;
+    line-height: 24px;
+    font-size: 17px;
+}
+
+.inicio-btn > img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.inicio-btn{
+    width: 6.95rem;
+    height: 1.80rem;
+    padding: 10px;
+    transition: ease;
+}
+
+.inicio-btn:hover{
+    transition-duration: 100ms;
+    background-color: rgba(66, 66, 66, 0.199);
+    border-radius: 50px;
+}
+
+/* Boton explorar */
+
+.explorar-btn > span{
+    
+    align-items: center;
+    width: 114px;
+    border-radius:50px;
+    text-align: center;
+    margin-right: 16px;
+    margin-left: 10px;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.explorar-btn > img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.explorar-btn{
+    width: 9rem;
+    height: 1.80rem;
+    padding: 10px;
+    transition: ease;
+}
+
+.explorar-btn:hover{
+    transition-duration: 100ms;
+    background-color: rgba(66, 66, 66, 0.199);
+    border-radius: 50px;
+}
+
+/* Boton notificaciones */
+
+.noti-btn > span{
+    
+    align-items: center;
+    width: 114px;
+    border-radius:50px;
+    text-align: center;
+    margin-right: 16px;
+    margin-left: 10px;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.noti-btn > img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.noti-btn{
+    width: 12rem;
+    height: 1.80rem;
+    padding: 10px;
+    transition: ease;
+}
+
+.noti-btn:hover{
+    transition-duration: 100ms;
+    background-color: rgba(66, 66, 66, 0.199);
+    border-radius: 50px;
+}
+  /* Boton Mensajes */
+  
+  
+.mensaje-btn > span{
+    
+    align-items: center;
+    width: 114px;
+    border-radius:50px;
+    text-align: center;
+    margin-right: 16px;
+    margin-left: 10px;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.mensaje-btn > img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.mensaje-btn{
+    width: 9rem;
+    height: 1.80rem;
+    padding: 10px;
+    transition: ease;
+}
+
+.mensaje-btn:hover{
+    transition-duration: 100ms;
+    background-color: rgba(66, 66, 66, 0.199);
+    border-radius: 50px;
+}
+
+/* Boton guardados */
+
+.guardar-btn > span{
+    
+    align-items: center;
+    width: 114px;
+    border-radius:50px;
+    text-align: center;
+    margin-right: 16px;
+    margin-left: 10px;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.guardar-btn > img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.guardar-btn{
+    width: 10rem;
+    height: 1.80rem;
+    padding: 10px;
+    transition: ease;
+}
+
+.guardar-btn:hover{
+    transition-duration: 100ms;
+    background-color: rgba(66, 66, 66, 0.199);
+    border-radius: 50px;
+}
+/* Listas */
+.listas-btn > span{
+    
+    align-items: center;
+    width: 114px;
+    border-radius:50px;
+    text-align: center;
+    margin-right: 16px;
+    margin-left: 10px;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.listas-btn > img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.listas-btn{
+    width: 7rem;
+    height: 1.80rem;
+    padding: 10px;
+    transition: ease;
+}
+
+.listas-btn:hover{
+    transition-duration: 100ms;
+    background-color: rgba(66, 66, 66, 0.199);
+    border-radius: 50px;
+}
+
+/* Boton Perfil */
+.perfil-btn > span{
+    
+    align-items: center;
+    width: 114px;
+    border-radius:50px;
+    text-align: center;
+    margin-right: 16px;
+    margin-left: 10px;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.perfil-btn > img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.perfil-btn{
+    width: 7rem;
+    height: 1.80rem;
+    padding: 10px;
+    transition: ease;
+}
+
+.perfil-btn:hover{
+    transition-duration: 100ms;
+    background-color: rgba(66, 66, 66, 0.199);
+    border-radius: 50px;
+}
+/* Boton opciones */
+
+.opciones-btn > span{
+    
+    align-items: center;
+    width: 114px;
+    border-radius:50px;
+    text-align: center;
+    margin-right: 16px;
+    margin-left: 10px;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.opciones-btn > img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.opciones-btn{
+    width: 12rem;
+    height: 1.80rem;
+    padding: 10px;
+    transition: ease;
+}
+
+.opciones-btn:hover{
+    transition-duration: 100ms;
+    background-color: rgba(66, 66, 66, 0.199);
+    border-radius: 50px;
+}
+/* Boton twittear */
+.twittear-btn > span{
+    margin-left: 50%;
+}
+.twitt{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width:225px;
+    height: 52px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.twittear-btn-a{
+
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.856);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: rgba(0, 193, 252, 0.712);
+    border: rgba(0, 193, 252, 0.712);
+    border-radius: 50px;
+    width:225px;
+    height: 52px;
+    font-style: bolder;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+
+
+.twittear-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    border-radius:50px;
+    text-align: center;
+    height: 30px;
+}
+
+.twittear-btn-a:hover{
+    background-color: rgba(0, 193, 252, 0.5);
+}
+
+ /* Part de en medio */
+
+.container-1{
+    display: grid;
+    width: 990px;
+    grid-template-columns: repeat(2. 1fr);
+    
+}
+
+ .middle-panel{
+    display: flex;
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;     
+ }
+
+ .container{
+    width: 600px;  
+    height: 100vh;
+    max-width: 600px;
+    
+}
+
+.sidebar{
+    display: grid;
+    grid-column: 1/2;
+    grid-template-columns: repeat(2, 1fr);
+    width: 566px;
+    height: 53px ;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.425);
+    border-left: 1px solid rgba(255, 255, 255, 0.425);
+    border-right: 1px solid rgba(255, 255, 255, 0.425);
+
+    padding-right: 16px;
+    padding-left: 16px;
+    background-color: black;
+}
+.sidebar-inicio{
+    display: flex;
+    color: white; 
+    width: 510px;
+    height: 53px;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.image-star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.image-star > img{
+   width: 20px; 
+   height: 20px;
+}
+
+.image-star:hover{
+    background-color: rgba(128, 128, 128, 0.103);
+}
+
+.status{
+    width: 598px;
+    height: 121px ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.425);
+    border-left: 1px solid rgba(255, 255, 255, 0.425);
+    border-right: 1px solid rgba(255, 255, 255, 0.425);
+}
+.status-text{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 566px;
+    height: 108px ;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.status-text > .icon-profile{
+    height: 98px;
+    width:48px;
+    margin-right: 10px;
+    padding-top: 10px;
+    
+}
+
+.icon-profile> img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.status-text > .text-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 506px;
+    height: 98px;
+    padding-top: 10px;
+    height: 58px;
+}
+
+.text-container > .text{
+    color: grey;
+    
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.iconos-stados{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 502px;
+    height: 48px;
+    align-items: center;
+
+}
+
+.iconos-stados > .iconos{
+    width: 172px;
+    height: 36px;
+    margin-top: 10px;
+}
+.iconos > img{
+    
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 19px;
+}
+
+.iconos-stados > .btn-twittear-1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 81px;
+    height: 36px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.btn-twittear-1 > .btn-twittear-2{
+    background-color: rgba(0, 193, 252, 0.712);
+    font-weight: bold;
+    background-color: rgba(0, 193, 252, 0.5);
+    right: 1;
+}
+
+.iconos-stados > .btn-twittear-2:hover{
+    background-color: rgba(0, 193, 252, 0.5);
+}
+
+/* Panel derecho de busqueda y noticias */
+.right-panel{
+
+
+    grid-column: 2/2;
+    width: 390px;
+
+}
+
+
+.right-container{
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(253, 139, 0); */
+}
+
+.right-container > .buscar{
+    background-color: grey;
+    width: 370px;
+    height: 53px;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    
+
+}
+.right-container > .right-container2{
+    display: flex;
+    width: 390px;
+    height: 54px;
+    /* background-color: rgb(41, 156, 118); */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.right-container2 > .buscar{
+    background-color: rgba(80, 77, 77, 0.418);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 50px;
+    width: 290px;
+    cursor: pointer;
+    height: 35px;
+    align-content: center;
+}
+
+.buscar > input{
+    width: 250px;
+    border-color: transparent;
+    border-radius: 50px;
+    background-color: rgba(80, 77, 77, 0);
+}
+.buscar > img{
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+}
+
+.buscar > img{
+    grid-column: 1/2;
+
+}
+
+.right-container > .container-news{
+    /* background-color: tomato; */
+    width: 100%;
+    height: 502px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: rgba(42, 48, 77, 0.404); 
+    border-radius: 20px;
+   
+}
+.right-container > .container-news{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 30px;
+    justify-content: center;
+}
+.container-news > .tittle{
+    
+    color: white;
+    display: flex;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    
+}
+.tittle{
+    padding: 10px;
+}
+
+.new1:hover{
+    background-color: rgba(42, 48, 77, 0.404); 
+
+}
+.right-container > .container-follows{
+    width: 100%;
+    height: 246px;
+    padding-bottom: 15px;
+    background-color: yellowgreen;
+}
+
+
+
+
+@media (max-width:1000px){
+
+
+    body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .left-panel{
+        max-height: fit-content;
+        max-width: 10vw;
+    }
+
+    .container-1{
+        grid-column: 2/3;
+        max-width: 90vw;
+        width: 90vw;
+    }
+    /* .right-panel{
+        display: none;
+    } */
+
+    main{
+        max-width: 90vw;
+        width: 90vw;
+    }
+
+    
+
+
+    /* botones respinsive design */
+
+    .botones-right{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        /* right: 0; */
+    }
+
+    nav{
+        max-width: 10vw;
+        align-items: flex-end;
+
+    }
+    
+    nav  > a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.856);
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bolder;
+        font-size: 17px;
+        font-style: bolder;
+        width: 40px;
+        justify-content: start;
+    }
+        
+    nav > a{
+    
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.856);    
+        font-style: bolder;
+        align-items: center;
+        display: flex;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: 48px;
+    }
+
+    .inicio-btn > span{
+        display: none;
+    }
+    
+
+    
+    .inicio-btn{
+        display: flex;
+        width: 21px;
+        height: 21px;
+        padding: 10px;
+        transition: ease;
+    }
+    
+    .inicio-btn:hover{
+        transition-duration: 100ms;
+        background-color: rgba(66, 66, 66, 0.199);
+        border-radius: 50px;
+    }
+    
+    /* Boton explorar */
+    
+    .explorar-btn > span{
+        display: none;
+    }
+    .explorar-btn{
+        width: 21px;
+        height: 21px;
+        padding: 10px;
+        transition: ease;
+    }
+    
+    .explorar-btn:hover{
+        transition-duration: 100ms;
+        background-color: rgba(66, 66, 66, 0.199);
+        border-radius: 50px;
+    }
+    
+    /* Boton notificaciones */
+    
+    .noti-btn > span{
+        
+        display: none;
+    }
+    
+   
+    
+    .noti-btn{
+        width: 21px;
+        height: 21px;
+        padding: 10px;
+        transition: ease;
+    }
+    
+    .noti-btn:hover{
+        transition-duration: 100ms;
+        background-color: rgba(66, 66, 66, 0.199);
+        border-radius: 50px;
+    }
+      /* Boton Mensajes */
+      
+      
+    .mensaje-btn > span{
+        display: none;
+    }
+    
+    .mensaje-btn > img{
+        width: 20px;
+        height: 20px;
+        
+    }
+    
+    .mensaje-btn{
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        transition: ease;
+    }
+    
+    .mensaje-btn:hover{
+        transition-duration: 100ms;
+        background-color: rgba(66, 66, 66, 0.199);
+        border-radius: 50px;
+    }
+    
+    /* Boton guardados */
+    
+    .guardar-btn > span{
+        
+        display: none;
+
+    }
+    
+    .guardar-btn{
+        width: 21px;
+        height: 21px;
+        padding: 10px;
+        transition: ease;
+    }
+    
+    .guardar-btn:hover{
+        transition-duration: 100ms;
+        background-color: rgba(66, 66, 66, 0.199);
+        border-radius: 50px;
+    }
+    /* Listas */
+    .listas-btn > span{
+        
+        display: none;
+        
+    }
+    
+    .listas-btn{
+        width: 21px;
+        height: 21px;
+        padding: 10px;
+        transition: ease;
+    }
+    
+    .listas-btn:hover{
+        transition-duration: 100ms;
+        background-color: rgba(66, 66, 66, 0.199);
+        border-radius: 50px;
+    }
+    
+    /* Boton Perfil */
+    .perfil-btn > span{
+        display: none;
+    }
+    
+    .perfil-btn{
+        width: 21px;
+        height: 21px;
+        padding: 10px;
+        transition: ease;
+    }
+    
+    .perfil-btn:hover{
+        transition-duration: 100ms;
+        background-color: rgba(66, 66, 66, 0.199);
+        border-radius: 50px;
+    }
+    /* Boton opciones */
+    
+    .opciones-btn > span{
+        
+        display: none;
+    }
+    
+   
+    .opciones-btn{
+        width: 21px;
+        height: 21px;
+        padding: 10px;
+        transition: ease;
+    }
+    
+    .opciones-btn:hover{
+        transition-duration: 100ms;
+        background-color: rgba(66, 66, 66, 0.199);
+        border-radius: 50px;
+    }
+    /* Boton twittear */
+    .twittear-btn > span{
+        display: none;
+    }
+    .twitt{
+        display: flex;
+        justify-content: end;
+        align-content: end;
+        width:60px;
+        height: 52px;
+        margin-top: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .twittear-btn-a{
+    
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.856);
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bolder;
+        font-size: 20px;
+        background-color: rgba(0, 193, 252, 0.712);
+        border: rgba(0, 193, 252, 0.712);
+        border-radius: 50px;
+        width:60px;
+        height: 52px;
+        font-style: bolder;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    
+    }
+    
+    
+    .twittear-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        border-radius:50px;
+        text-align: center;
+        height: 30px;
+    }
+    
+    .twittear-btn-a:hover{
+        background-color: rgba(0, 193, 252, 0.5);
+    }
+
+}
+
+@media (max-width: 750px){
+    .right-panel{
+        display: none;
+    } 
+}
+    
+
+/* barra en medio */
